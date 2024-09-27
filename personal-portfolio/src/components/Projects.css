@@ -1,0 +1,74 @@
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin: 0 0;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin: 0 0;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    border-left: 2px solid #ccc; /* Adjust color as needed */
+  }
+  
+  .timeline-content {
+    position: relative;
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+   
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Adjust width as needed */
+    left: calc(50% - 22.5%); /* Centers the box */
+    margin: 10px 0;
+  }
+  
+  .timeline-item:nth-child(even) .timeline-content {
+    left: calc(50% + 30px); /* Adjust position for even items */
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-content {
+    left: calc(50% - 47%); /* Adjust position for odd items */
+  }
+  
+  .modal-content {
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    color: white; /* Ensure text is visible */
+  }
+  
+  .modal-header, .modal-footer {
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  }
+  
+  .modal-header .modal-title,
+  .modal-footer .btn {
+    color: white;
+  }
+  
+  .modal-body {
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    color: white;
+  }
+  
+  .modal-body p, .modal-body ul {
+    color: white;
+  }
+  
+  .modal-footer .btn-primary {
+    background-color: white;
+    color: #AA367C;
+    border: none;
+  }
+  
+  .modal-footer .btn-primary:hover {
+    background-color: #4A2FBD;
+    color: white;
+  }
+  
