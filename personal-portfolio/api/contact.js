@@ -6,7 +6,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// For Vercel serverless functions, we'll use an API route instead of a traditional server
 module.exports = async (req, res) => {
   if (req.method === 'POST') {
     const { firstName, lastName, email, phone, message } = req.body;
@@ -33,13 +32,31 @@ module.exports = async (req, res) => {
     };
 
     try {
+      // Attempt to send the email
       await transporter.sendMail(mailOptions);
       res.status(200).json({ status: "Message Sent" });
+
     } catch (error) {
       console.error("Error sending email:", error);
-      res.status(500).json({ status: "Error", message: "Failed to send email" });
+
+      // Improved error handling with clear messaging
+      if (error.response) {
+        // Nodemailer-specific errors (e.g., issues with sending mail)
+        res.status(500).json({ 
+          status: "Error", 
+          message: "Failed to send email. Please check your email service configuration." 
+        });
+      } else {
+        // Other types of errors (e.g., issues with request/response, networking)
+        res.status(500).json({ 
+          status: "Error", 
+          message: "An unexpected error occurred. Please try again later." 
+        });
+      }
     }
+
   } else {
+    // Handle non-POST methods
     res.setHeader('Allow', ['POST']);
     res.status(405).end(`Method ${req.method} Not Allowed`);
   }
