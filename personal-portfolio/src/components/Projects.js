@@ -17,7 +17,7 @@ export const Projects = () => {
       title: "DocuWell",
       description: "A full stack web application that works as a Patient Management System and incorporates a chatbot.",
       imgUrl: projImg1,
-      link: "https://example.com/docuwell",
+      link: "https://github.com/CSin007/DocuWell",
       techStack: ["React", "Node.js", "Express", "MongoDB","Auth0 API"],
       fullDescription: "DocuWell acts as a database for patients to enter their medicines. It also has a chatbot that can help patients with any questions they may have. Built using React,CSS,HTML for frontend and backend was Node.Js with MongoDB.Also used Auth0 for authentication and OpenAI API."
     },
@@ -25,7 +25,7 @@ export const Projects = () => {
       title: "AI YouTube Clone",
       description: "An AI-based YouTube clone built with React.js and Node.js that auto generates video thumbnails and description.",
       imgUrl: projImg2,
-      link: "https://example.com/ai-youtube-clone",
+      link: "https://github.com/CSin007/AI_Dev/tree/main/AIYoutube",
       techStack: ["React.js", "Node.js","OpenAI API","DALL-E API"],
       fullDescription: "This app helps generate video descriptions and thumbnails using OpenAI API and DALL-E API. Built using HTML,CSS and vanilla JavaScript for fronend along with OpenAI,DALL-E-3 API",
     },
