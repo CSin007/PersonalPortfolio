@@ -4,6 +4,7 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import projImg4 from "../assets/img/project-img4.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -38,7 +39,14 @@ export const Projects = () => {
       techStack: ["React.js", "CSS","HTML"],
       fullDescription: "Used advanced features of React.js,ODMB API to fetch movie data from an API and simulate Prime Video."
     },
-    
+    {
+      title: "Just VR it",
+      description: "What if instead of just googling things, you could just VR it?",
+      imgUrl: projImg4,
+      link: "https://devpost.com/software/just-vr-it",
+      techStack: ["React.js", "CSS","Three.Js","C#","Unity","Open AI","Google Alphafold"],
+      fullDescription: "Built AI-powered VR study application to help students vizualize and understand complex STEM concepts"
+    },
   ];
 
   const experiences = [
@@ -85,7 +93,7 @@ export const Projects = () => {
         "Scraped data from over 2,000 websites to collect high-quality SVGs for research, utilizing advanced web scraping techniques using BeaitifulSoup",
         "Annotated data for each chart, using vizualization techniques such as chart.js, d3js, and Plotly",
       ],
-      link: "https://cchen-vis.github.io/VisAnatomy_Browser/",
+      link: "https://www.researchgate.net/publication/384974415_VisAnatomy_An_SVG_Chart_Corpus_with_Fine-Grained_Semantic_Labels",
     },
     {
       lab: "UMD FIRE Lab",
