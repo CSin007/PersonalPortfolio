@@ -58,9 +58,16 @@ export const NavBar = () => {
                 <a href="https://www.github.com/CSin007"><img src={githubIcon} alt="" /></a>
                 
               </div>
-              <HashLink to='#connect'>
-                <button className="vvd"><span>Let’s Connect</span></button>
-              </HashLink>
+              <a
+              href="https://www.linkedin.com/in/chayanikasinha10/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hash-link"
+              >
+              <button className="vvd">
+                <span>Let’s Connect</span>
+              </button>
+              </a>
             </span>
           </Navbar.Collapse>
         </Container>

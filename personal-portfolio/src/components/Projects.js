@@ -5,6 +5,7 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
+import projImg5 from "../assets/img/project-img5.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -14,6 +15,14 @@ export const Projects = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
   const projects = [
+    {
+      title: "Burnout Buddy",
+      description: "An AI-powered wellness app that helps software engineers detect and prevent burnout using Gemini, Fitbit, and fun interventions.",
+      imgUrl: projImg5,
+      link: "https://devpost.com/software/burnoutbuddy",
+      techStack: ["React", "Charts.js", "Github API", "Flask", "Python", "Gemini API", "Fitbit API", "Spotify API", "OpenCV", "MongoDB"],
+      fullDescription: "Burnout Buddy is an AI-driven wellness companion built at Bitcamp 2025, where it won Best Use of Gemini. The app detects real time signs of burnout in software engineers using eye-blink detection, posture tracking, and Fitbit data. It then responds with mood-based interventions like journaling prompts, music recommendations, and playful mini-games. The frontend is built in React, while the Flask backend uses Gemini for burnout quote generation, OpenCV for fatigue detection, and Fitbit/Spotify integrations for personalized recovery suggestions."
+    },
     {
       title: "DocuWell",
       description: "A full stack web application that works as a Patient Management System and incorporates a chatbot.",
@@ -51,6 +60,17 @@ export const Projects = () => {
 
   const experiences = [
     {
+      company: "Amazon Web Services",
+      role: "Software Development Engineer Intern",
+      date: "June 2025 - August 2025",
+      contributions: [
+        "Built a React (TypeScript) UI for uploading and previewing attachments, integrating with REST APIs defined using Smithy.",
+        "Implemented attachment APIs with Node.js, leveraging AWS S3 pre-signed URLs for secure and scalable media storage.",
+        "Designed an event-driven pipeline where S3 PUT triggers invoked an AWS Lambda to update DocumentDB and append attachment metadata to target objects."
+      ],
+      link: "https://aws.amazon.com/security/"
+    },
+    {
       company: "Technuf, LLC",
       role: "Software Engineer Intern",
       date: "June 2024 - August 2024",
@@ -76,9 +96,20 @@ export const Projects = () => {
 
   const research = [
     {
+      lab: "UMD Computational Linguistics Lab",
+      title: "Research Assistant",
+      date: "March 2025 - Present",
+      contributions: [
+        "Conducting literature review on collaborative writing and human-LLM coauthoring behavior to understand how people co-write with large language models.",
+        "Developing an autocorrect-like sentence completion system using Python to study real-time language generation and user interaction patterns.",
+        "Exploring computational methods for analyzing co-writing dynamics and prompt-driven linguistic adaptation."
+      ],
+      link: "https://wiki.umiacs.umd.edu/clip/index.php/Main_Page"
+    },
+    {
       lab: "UMD Computational SocioDynamics Lab",
       title: "Machine Learning Research Intern",
-      date: "June 2024 - Present",
+      date: "June 2024 - January 2025",
       contributions: [
         "Preprocessed data and built a web scraping script using Python(Selenium) to collect over 1M+ articles on the English, Bengali and Italian wikis and used SQL to query into the wiki databases",
         "Building a large language model to predict deletion and reasons of deletion of articles using Pandas,NumPy and PyTorch",

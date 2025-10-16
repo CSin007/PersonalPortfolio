@@ -63,11 +63,11 @@ export const Banner = () => {
                 <p>
   <h2>Hello, fellow space explorer!</h2> 
   <ul>
-    <li>I am <strong>Chayanika Sinha</strong>, a junior at the University of Maryland College Park.</li>
+    <li>I am <strong>Chayanika Sinha</strong>, a senior at the University of Maryland College Park.</li>
     <li>Minoring in <strong>Astronomy</strong> and <strong>Data Science</strong>.</li>
     <li>A <strong>Full Stack Web Developer</strong> with an interest in <strong>Machine Learning</strong>.</li>
-    <li>Worked two internships as a software engineer in the past.</li>
-    <li>Currently working as a <strong>Machine Learning Research Assistant</strong>.</li>
+    <li>Worked internships at companies like AWS,Wikipedia and MITRE as a software engineer in the past.</li>
+    <li>Currently working as a <strong>Natural Language Research Assistant</strong>.</li>
   </ul>
 </p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
