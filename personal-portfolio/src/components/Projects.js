@@ -16,6 +16,14 @@ export const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const projects = [
     {
+      title: "StudyMate",
+      description: "A Tinder style android app to find your perfect study partner",
+      imgUrl: projImg6,
+      link: "https://devpost.com/software/studymate-pfom0e",  
+      techStack: ["Kotlin", "Node.js", "Android Development", "FireBase", "Firestore", "Google Gemini API"],
+      fullDescription: "StudyMate is a Tinder-style Android app designed to connect students with compatible study partners. Built using Kotlin for the Android app frontend and backend, Retrofit client to include Google Gemini integration using Node.js, used Firestore and Firebase for user authentication and user profile storage. The app provides chatbot feature and real time messaging."
+    },
+    {
       title: "Burnout Buddy",
       description: "An AI-powered wellness app that helps software engineers detect and prevent burnout using Gemini, Fitbit, and fun interventions.",
       imgUrl: projImg5,
