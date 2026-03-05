@@ -1,7 +1,6 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png";
-import ocamlLogo from "../assets/img/ocamlLogo.svg";
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
@@ -271,7 +270,7 @@ export const Skills = () => {
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
+      <img className="background-image-left" src={colorSharp} alt="Background decoration" />
     </section>
   );
 };

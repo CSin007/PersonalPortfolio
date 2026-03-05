@@ -8,6 +8,9 @@ import navIcon1 from "../assets/img/nav-icon1.svg";
 
 
 export const Footer = () => {
+  const linkedInUrl = "https://www.linkedin.com/in/chayanikasinha10/";
+  const githubUrl = "https://www.github.com/CSin007";
+
   return (
     <footer className="footer">
       <Container>
@@ -18,8 +21,8 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={githubIcon} alt="Icon" /></a>
+              <a href={linkedInUrl} target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="LinkedIn" /></a>
+              <a href={githubUrl} target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt="GitHub" /></a>
             </div>
             <p>Copyright 2024. All Rights Reserved</p>
           </Col>

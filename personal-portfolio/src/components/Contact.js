@@ -34,7 +34,7 @@ export const Contact = () => {
         },
         body: JSON.stringify(formDetails),
       });
-      let result = await response.json();
+      await response.json();
       setFormDetails(formInitialDetails);
       if (response.ok) {
         setStatus({ success: true, message: 'Message sent successfully'});
